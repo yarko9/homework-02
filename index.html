@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework-02. Tags, Tables.</title>
+</head>
+<body>
+    <header>
+        <h1>Real Madrid FC</h1>
+        <img src="img/rm-logo.jpg" alt="Real Madrid logo">
+    </header>
+    
+    <main>
+        
+        <article>
+      <h2>About RM FC</h2>
+      <p>Real Madrid is a professional football club based in Madrid, Spain. Founded on 6 March 1902 as Madrid Football Club, the club has traditionally worn a white home kit since inception. The word Real is Spanish for Royal and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European sporting entities, Real Madrid's members (socios) have owned and operated the club throughout its history.</p>
+        </article>
+      
+      <article>
+          <h2>Current squad of RM</h2>
+          <h3>Goalkeepers:</h3>
+          <ul>
+              <li>K. Navas</li>
+              <li>K. Casilla</li>
+          </ul>
+          <h3>Defenders</h3>
+          <ul>
+              <li>S. Ramos</li>
+              <li>Marcelo</li>
+              <li>R. Varane</li>
+              <li>D. Carvajal</li>
+          </ul>
+          <h3>Midfielder</h3>
+          <ul>
+                <li>L. Modric</li>
+          <li>T. Kroos</li>
+          <li>Casemiro</li>
+          <li>M. Asensio</li>
+          </ul> 
+          <h3>Forwards</h3>
+          <ul>
+              <li>K. Benzema</li>
+              <li>G. Bale</li>
+              <li>C. Ronaldo</li>
+          </ul>
+      </article>
+      
+      <article>
+          <h2>GoalScorers</h2>
+          <table border="3">
+              <tbody>
+                  <tr>
+                      <th colspan="6">Top GoalScorers of the RM</th>
+                  </tr>
+                  
+                  <tr>
+                      <th>#</th><th>Name</th><th>Years</th><th>Matches</th><th>Goals</th><th>The sum of goals for RM</th>
+                  </tr>
+                  
+                  <tr>
+                      <th>1</th><th>C. Ronaldo</th><th>2009-Present</th><th>410</th><th>417</th><th rowspan="5">1580</th>
+                  </tr>
+                  
+                  <tr>
+                      <th>2</th><th>Raul Gonzalez</th><th>1994-2010</th><th>741</th><th>323</th>
+                  </tr>
+                  
+                   <tr>
+                      <th>3</th><th>Alfredo Di Stefano</th><th>1953-1964</th><th>396</th><th>308</th>
+                  </tr>
+                  
+                  <tr>
+                      <th>4</th><th>Carlos Santillana</th><th>1971-1988</th><th>645</th><th>290</th>
+                  </tr>
+                  
+                  <tr>
+                      <th>5</th><th>Ferenc Puskas</th><th>1958-1966</th><th>262</th><th>242</th>
+                  </tr>
+                  
+                 </tbody>
+             
+          </table>
+      </article>
+      <h2>RM Shop</h2>
+      <h3>In our shop you can find:</h3>
+      <ol>
+          <li>T-Shirts</li>
+          <li>Bags</li>
+          <li>Football Balls</li>
+          <li>Polos</li>
+          <li>Shorts</li>
+      </ol>
+      
+      <h3>Here you can make an order:</h3>
+      <form method="POST" action="yaroslavfedyna@gmail.com">
+          <label>Client name:</label>
+          <input type="text" name="client-name" placeholder="Tom Hanks">
+          
+          <br><br><label>Client email:</label>
+          <input type="email" name="client-email" placeholder="tomhanks@hollywood.us">
+          
+          <br><br>
+          <input type="radio" name="gender" value="Male">Male <br>
+          <input type="radio" name="gender" value="Female">Female <br>
+          <input type="radio" name="gender" value="Other">Other
+          
+    
+          <br><br><label>What you want to order?</label>
+          <select name="type-of-order">
+              <option value="T-Shirt">T-Shirt</option>
+              <option value="Football Balls">Football Ball</option>
+              <option value="Shorts">Shorts</option>
+              <option value="Bags">Bag</option>
+              <option value="Polo">Polo</option>
+          </select>
+          <br><br><label>How many items you want to order?(1-10)</label><br>
+          <input type="range" name="items" min="1" max="10">
+         
+          <br><br>
+          <input type="checkbox" name="ad" value="Yes">I want to recieve ads from RM Shop <br>
+          
+          <br>
+          <input type="button" onclick="alert('Your order is processed! Thank you :)')" value="Order"> 
+          
+        </form>
+      
+      
+      
+    </main>
+    
+</body>
+</html>
