@@ -12,13 +12,17 @@
         <h1><b>Соціальне опитування на тему: "Відпочинок ви виберете у 2018 році?"</b></h1>
         </header>
         <h3><i>Опитування проводиться з метою покращення наданя послуг у сфері готельно-відпочинкового бізнесу</i></h3>
-        <form method="POST" action="yaroslavfedyna@gmail.com">
+        <form method="POST" action="https://formspree.io/yaroslavfedyna@gmail.com">
         <fielset>
             <legend><b>Особисті дані.</b></legend>
             <ol>
                 <li>Ім'я</li>
                 <input type="text" name="name"><br><br>
                 
+                <li>
+                <label for="person-email">Емейл</label></li>
+                <input type="email" name="person-email" id="person-email" placeholder="ivan.iii@gmail.com"><br><br>
+             
                 <li>Вік</li>
                 <input type="range" name="yo" min="1" max="100" step="1"><br>
                 
@@ -31,7 +35,7 @@
             </ol>
             
             <legend><b>Ваш відпочинок.</b></legend>
-            <ol start="5">
+            <ol start="6">
                 <li>Коли останній раз ви були на відпочинку?</li>
                 <input type="date" name="date"><br><br>
                 
@@ -61,7 +65,7 @@
               </ol>
               
               <legend><b>Основні недоліки відпочинку в Україні.</b></legend>
-              <ol start="11" type="I">
+              <ol start="12" type="I">
                   <li>Яку оцінку ви дасте свому останньому відпочинку в Україні?</li>
                   <input type="radio" name="rating1" value="One">1 (жахливо)<br>
                   <input type="radio" name="rating2" value="Two">2 (незадовільно)<br>
@@ -70,16 +74,13 @@
                   <input type="radio" name="rating5" value="Five">5 (відмінно)<br><br>
                   
                   <li>У якій області проходив вищезгаданий відпочинок?</li>
-                  <input type="text" name="Region" placeholder="Харківська/Волинська" required pattern="[A-Z]">
+                  <input type="text" name="Region" placeholder="Харківська/Волинська">
               </ol><br>
-              <input type="submit" onclick="alert('Дякуємо за вашу відповідь:)')" value="Надіслати">
+              <input type="submit">
               
-              
-             
-            
-            
-        </fielset>
+            </fielset>
         </form>
     
 </body>
+
 </html>
